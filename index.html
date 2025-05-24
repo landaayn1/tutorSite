@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Моя первая страница</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <header role="banner">
+        <nav role="navigation" aria-label="Основная навигация">
+            <a href="#">Главная</a>
+            <a href="#">Курсы</a>
+            <a href="#">Тесты</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </header>
+    <div class="container">
+    <aside>
+        <h3>Навигация по странице</h3>
+        <ul>
+            <li class="asideitems"><a href="#explanation">Объяснение</a></li>
+            <li class="asideitems"><a href="#examples">Примеры</a></li>
+            <li class="asideitems"><a href="#test1">Тест по пройденной теме</a></li>
+            <li class="asideitems"><a href="#themes">Связанные темы</a></li>
+            <li class="asideitems"><a href="#feedback">Обратная связь</a></li>
+        </ul>
+        <h3>Другие полезности</h3>
+        <ul>
+            <li class="asideitems"><a href="#">Калькулятор</a></li>
+            <li class="asideitems"><a href="#">Формулы</a></li>
+        </ul>
+    </aside>
+    <main>
+        <div class="nazvanie"><h2>Квадратные уравнения</h2></div>
+    <section>
+    <div class="vvedenie"><h5>Краткое введение</h5>
+    <p>Квадратное уравнение имеет вид: \( ax^2 + bx + c = 0 \).</p>
+    </div>
+    <div class="obyasnenie" id="explanation"><p>Объяснение темы</p></div>
+    </section>
+    <section class="exampleContainer" id="examples">
+    <div class="example">
+        <h3>Пример 1</h3>
+        <p>Текст примера 1</p>
+    </div>
+    <div class="example">
+        <h3>Пример 2</h3>
+        <p>Текст примера 2</p>
+    </div>
+    <div class="example">
+        <h3>Пример 3</h3>
+        <p>Текст примера 3</p>
+    </div>
+    </section>
+    <section>
+    <form id="test1">
+    <label for="test"><h2>Тест по пройденной теме</h2></label><br>
+    <input type="submit" id = "test" value="пройти">
+    </form>
+    </section>
+    <section class="themes" id="themes">
+        <div><h2>Связанные темы</h2></div>
+        <ul>
+            <li>Тема 1</li>
+            <li>Тема 2</li>
+            <li>Тема 3</li>
+        </ul>
+    </section>
+    <section>
+        <div><h2>Остались вопросы? Заполняй форму и уточняй непонятные моменты!</h2></div>
+        <form id="feedback">
+            <label for="name">Имя</label><br>
+            <input type="text" id="name" name="name" placeholder="введите имя"><br>
+            <label for="email">Почта</label><br>
+            <input type="email" id="email" name="email" placeholder="введите email"><br>
+            <label for="message">Сообщение</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" placeholder="введите ваш вопрос"></textarea><br>
+            <input type="submit" id = "sendform" value="отправить">
+        </form>
+    </section>
+    </main>
+</div>
+    <footer>
+  <p class="footertext">© 2025 Маша SWAG. Все права защищены.</p>
+</footer>
+</body>
+</html>
+

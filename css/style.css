@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  scroll-margin-top: 200px;
+}
+:root{
+    --radius: 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background-color: #FAF9F6;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+nav{
+    height: 60px;
+    background-color: #51375C;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+}
+nav a {
+  display: inline-block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #FAF9F6;
+  font-weight: bold;
+}
+.container{
+    display: flex;
+}
+aside{
+flex: 1;
+top: 20px;
+border: 2px solid #2E2E2E;
+border-radius: var(--radius);
+height: 100vh;
+position: sticky;
+padding: 10px;
+margin-top: 20px;
+width: 250px;
+text-align: center;
+}
+main{
+    flex: 4;
+}
+.nazvanie{
+    width: 400px;
+    margin: 20px auto;
+    background-color: #70906B;
+    text-align: center;
+    border: 3px solid #2E2E2E;
+    border-radius: var(--radius);
+    position:static;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+h2{
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.vvedenie{
+    width: 800px;
+    margin: 20px auto;
+    border: 2px solid #2E2E2E;
+    text-align: justify;
+    border-radius: var(--radius);
+}
+.obyasnenie{
+    width: 800px;
+    margin: 20px auto;
+    border: 2px solid #2E2E2E;
+    text-align: justify;
+    border-radius: var(--radius);
+}
+p{
+    line-height: 1.6;
+}
+.exampleContainer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.example{
+    border:2px;
+    border-radius: var(--radius);
+    width: 300px;
+    height: 300px;
+    transition: transform 0.5s ease;
+    background-image: url(images/kletkafonlittle.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+.example:hover{
+    transform: scale(1.03);
+    box-shadow: #2E2E2E;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+}
+li{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid #2E2E2E;
+    margin: 10px auto;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+form{
+    border: 2px solid #2E2E2E;
+    width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@keyframes pulse{
+    0% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#test, #sendform {
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #C8B6FF;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+#test, #sendform {
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #C8B6FF;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+#test:hover, #sendform:hover {
+  animation: pulse 0.5s infinite;
+}
+
+footer{
+    text-align: center;
+    background-color: #51375C;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.footertext{
+    height: 20px;
+    color: #FAF9F6;
+    display: inline-block;
+    padding: 10px 10px;
+}
+.vvedenie, .obyasnenie, form {
+  padding: 15px;
+}
+nav a:hover {
+  background-color: #588157;
+  transition: 0.3s;
+}
+
+#test:hover, #sendform:hover {
+  background-color: #b8a1f7;
+  cursor: pointer;
+}
+input::placeholder, textarea::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0.8;
+    color: #2E2E2E;
+}
+textarea{
+    max-height: fit-content;
+    width: 90%;
+    resize: none;
+}
+input:focus, textarea:focus{
+    border: 3px solid #51375C;
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: #2E2E2E;
+    font-weight: bold;
+    
+}
+.asideitems{
+width: 200px;
+height: 40px;
+}
+a:active{
+    color: #FAF9F6;
+}
+.dopel{
+    text-align: center;
+    border: 0;
+    box-shadow: 0;
+}
+
